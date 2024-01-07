@@ -1,0 +1,103 @@
+.main {
+  width: 80%;
+  padding: 40px 100px;
+
+  .breadcumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 8px;
+    font-size: small;
+    color: @sec-text-color;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .mini {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: larger;
+      font-weight: 100;
+      color: black;
+
+      b {
+        color: @sec-text-color;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    .media {
+      padding-right: 20px;
+      width: 15%;
+      position: relative;
+
+      & > .box {
+        position: relative;
+        display: flex;
+
+        label {
+          position: absolute;
+          background-color: black;
+          color: white;
+          bottom: 4px;
+          right: 4px;
+          font-size:  8px;
+          letter-spacing: 0px;
+          padding: 2px;
+          border-radius: 5px;
+        }
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+    }
+
+    th {
+      text-align: start;
+      text-transform: capitalize;
+      padding: 20px 0px;
+      color: @text-color;
+    }
+
+    td {
+      padding: 5px 0px;
+      color: @text-color;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      b {
+        color: @text-color;
+        font-size: 14px;
+
+      }
+
+      span {
+        width: 224px;
+        color: #a3bac6;
+        font: normal normal normal 12px/18px;
+        font-size: 12px;
+      }
+    }
+  }
+}

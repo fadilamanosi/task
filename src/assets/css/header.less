@@ -1,0 +1,76 @@
+// Usage
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom: 2px solid @border-color;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font: normal normal bold 28px/32px Helvetica;
+    color: @text-color;
+
+    .box {
+      background-color: #FBBD71;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: grid;
+      place-content: center;
+
+      .inside {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        border-radius: 100%;
+
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    color: #707070;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    li.active {
+      border-top: 2px solid #0CABD8;
+      gap: 4px;
+      color: @text-color;
+    }
+  }
+
+  .user {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mini-info {
+    display: flex;
+    gap: 20px;
+    border-left: 2px solid @border-color;
+    padding-left: 20px;
+    align-items: center;
+    div {
+      display: grid;
+    }
+
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.record-modal {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.502);
+    display: grid;
+    place-content: center;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid @border-color;
+
+        span {
+            font-weight: 600;
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+
+
+    .body {
+        display: grid;
+        gap: 15px;
+        padding: 20px 30px;
+
+        p {
+            padding: 5px 0px;
+            font-weight: 300;
+            font-size: 16px/25px;
+        }
+
+        .save-to {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #F9FAFB;
+            border: 1px solid @border-color;
+            padding: 10px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+        .options {
+            width: 100%;
+            padding: 15px 0px;
+            display: grid;
+            gap: 8px;
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

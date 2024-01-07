@@ -1,0 +1,64 @@
+// Variables
+@border-color: #ECEDF3;
+@text-color: #21455E;
+@sec-text-color: #637C8E;
+
+@active-text-color: #637D8E;
+
+
+@import url('./header.less');
+@import url('./main.less');
+@import url('./sidebar.less');
+@import url('./record.less');
+@import url('./recording.less');
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 20px;
+}
+
+html,
+body,
+#app {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+
+
+p,
+h1,
+h2,
+h3,ul {
+    margin: 0px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-divider {
+    display: flex;
+    height: 100%;
+    justify-content: inherit;
+    position: relative;
+
+    // border: 2px solid red;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    min-width: 360px;
+}

@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: #fafbfc;
+  height: 100%;
+  width: 20%;
+  text-wrap: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: @text-color;
+
+  div {
+    display: flex;
+    padding: 6px 0px 6px 40px;
+    border-radius: 5px;
+    gap: 20px;
+    align-items: center;
+
+    span {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+  .active {
+    background-color: #e2e5ed;
+  }
+}
