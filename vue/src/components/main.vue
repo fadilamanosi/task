@@ -37,7 +37,12 @@
         </div>
 
         <div class="table">
-            <table>
+
+            <div v-if="load" class="loader">
+                <loader></loader>
+            </div>
+
+            <table v-else>
                 <thead>
                     <tr>
                         <th>recordings</th>
@@ -82,7 +87,8 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
+import axios from "axios";
 
 // Reusables
 import Button from "@/components/reusables/button.vue"
@@ -97,11 +103,24 @@ import funnel from "@/components/icons/funnel.vue";
 import camera from "@/components/icons/camera.vue";
 import recordIcon from "@/components/icons/record.vue";
 import Option from "@/components/icons/option.vue";
+import loader from "@/components/icons/loader.vue";
 
 
-const recordings = computed(function () {
-    return data
-});
+const recordings = ref({});
+const load = ref(false)
+
+function getRecordings() {
+    load.value = true;
+    axios.get('https://test.fadilamanosi.com/api/recordings')
+        .then((e) => {
+            recordings.value = e.data
+            load.value = false;
+        })
+        .catch((e) => {
+            console.log(e)
+            load.value = false;
+        })
+}
 
 const record = ref({
     options: false,
@@ -115,5 +134,9 @@ function startRecording(e) {
     record.value.start = true;
     record.value.options = false
 }
+
+onMounted(() => {
+    getRecordings()
+})
 
 </script>
