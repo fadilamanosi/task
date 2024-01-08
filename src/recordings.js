@@ -7,7 +7,7 @@ const data = [
         "last_modified": "3 minutes ago",
         "title": "Getting it right the first time",
         "description": "",
-        "src": './src/assets/images/placeholder.jpg',
+        "src": '/src/assets/images/placeholder.jpg',
         "length": "00:14"
     },
     {
@@ -18,7 +18,7 @@ const data = [
         "last_modified": "3 minutes ago",
         "title": "Getting it right the first time",
         "description": "",
-        "src": './src/assets/images/placeholder.jpg',
+        "src": '/src/assets/images/placeholder.jpg',
         "length": "00:14"
     },
     {
@@ -29,7 +29,7 @@ const data = [
         "last_modified": "3 minutes ago",
         "title": "Getting it right the first time",
         "description": "",
-        "src": './src/assets/images/placeholder.jpg',
+        "src": '/src/assets/images/placeholder.jpg',
         "length": "00:14"
     },
     {
@@ -40,7 +40,7 @@ const data = [
         "last_modified": "3 minutes ago",
         "title": "Getting it right the first time",
         "description": "",
-        "src": './src/assets/images/placeholder.jpg',
+        "src": '/src/assets/images/placeholder.jpg',
         "length": "00:14"
     },
     {
@@ -51,7 +51,7 @@ const data = [
         "last_modified": "3 minutes ago",
         "title": "Getting it right the first time",
         "description": "",
-        "src": './src/assets/images/placeholder.jpg',
+        "src": '/src/assets/images/placeholder.jpg',
         "length": "00:14"
     }
 
