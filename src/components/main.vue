@@ -52,14 +52,15 @@
 
                 <tr v-for="(item, index) in recordings" :key="index">
                     <td class="media">
-                        <div class="box" >
+                        <div class="box">
                             <label>{{ item.length }}</label>
                             <img :src="item.src" alt="">
                         </div>
                     </td>
                     <td class="info ">
                         <b>{{ item.title }}</b>
-                        <span>{{ item.description.length > 0 ? item.description : 'The Video description is shown here if the user has added it.'}}</span>
+                        <span
+                            v-html="item.description.length > 0 ? item.description : 'The Video description is shown here if the user has added it.'"></span>
                     </td>
                     <td>{{ item.views }}</td>
                     <td>{{ item.size }}</td>
@@ -88,13 +89,13 @@ import recordVue from "@/components/modals/record.vue"
 import recording from "@/components/modals/recording.vue"
 
 
-import { data } from '@/recordings';
-import ArrowRight from "./icons/arrow-right.vue";
-import arrowDisperse from "./icons/arrow-disperse.vue";
-import funnel from "./icons/funnel.vue";
-import camera from "./icons/camera.vue";
-import recordIcon from "./icons/record.vue";
-import Option from "./icons/option.vue";
+import { data } from '../recordings';
+import ArrowRight from "@/components/icons/arrow-right.vue";
+import arrowDisperse from "@/components/icons/arrow-disperse.vue";
+import funnel from "@/components/icons/funnel.vue";
+import camera from "@/components/icons/camera.vue";
+import recordIcon from "@/components/icons/record.vue";
+import Option from "@/components/icons/option.vue";
 
 
 const recordings = computed(function () {
