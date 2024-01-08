@@ -26,8 +26,8 @@
             <div class="mini-info">
                 <img src="/images/user.jpg">
                 <div>
-                    <span>Cody Fisher</span>
-                    <span>fadilamanosi@gmail.com</span>
+                    <span class="name">Cody Fisher</span>
+                    <span class="email">fadilamanosi@gmail.com</span>
                 </div>
             </div>
         </div>
