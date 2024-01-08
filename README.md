@@ -12,6 +12,9 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 # Project Setup For Vue
 
+
+### Move into directory
+
 ```sh
 cd vue
 ```
