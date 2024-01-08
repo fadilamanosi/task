@@ -13,6 +13,10 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 # Project Setup For Vue
 
 ```sh
+cd vue
+```
+
+```sh
 npm install
 ```
 
