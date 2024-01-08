@@ -87,7 +87,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from "vue";
+import { onMounted, ref } from "vue";
 import axios from "axios";
 
 // Reusables
@@ -95,8 +95,6 @@ import Button from "@/components/reusables/button.vue"
 import recordVue from "@/components/modals/record.vue"
 import recording from "@/components/modals/recording.vue"
 
-
-import { data } from '../recordings';
 import ArrowRight from "@/components/icons/arrow-right.vue";
 import arrowDisperse from "@/components/icons/arrow-disperse.vue";
 import funnel from "@/components/icons/funnel.vue";

@@ -10,7 +10,7 @@ Laravel + Vuejs Test Task
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+# Project Setup For Vue
 
 ```sh
 npm install
