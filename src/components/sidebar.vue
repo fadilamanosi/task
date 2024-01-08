@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import Film from './icons/film.vue';
-import Share from './icons/share.vue';
+import Film from '@/components/icons/film.vue';
+import Share from '@/components/icons/share.vue';
 
 </script>

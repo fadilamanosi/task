@@ -1,7 +1,6 @@
 <template>
     <header>
         <div class="logo">
-            <!-- <img src="../assets/logo.svg"> -->
             <div class="box">
                 <div class="inside"></div>
             </div>

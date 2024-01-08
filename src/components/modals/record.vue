@@ -48,9 +48,9 @@
 
 import Toggle from "@/components/reusables/toggle.vue"
 import Button from "@/components/reusables/button.vue"
-import Close from "../icons/close.vue";
+import Close from "@/components/icons/close.vue";
 import { ref } from "vue";
-import ArrowDown from "../icons/arrow-down.vue";
+import ArrowDown from "@/components/icons/arrow-down.vue";
 
 const form = ref({
     screen: true,
