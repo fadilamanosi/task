@@ -36,43 +36,44 @@
             </div>
         </div>
 
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>recordings</th>
+                        <th>title</th>
+                        <th>views</th>
+                        <th>size</th>
+                        <th>last modified</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>recordings</th>
-                    <th>title</th>
-                    <th>views</th>
-                    <th>size</th>
-                    <th>last modified</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-
-                <tr v-for="(item, index) in recordings" :key="index">
-                    <td class="media">
-                        <div class="box">
-                            <label>{{ item.length }}</label>
-                            <img :src="item.src" alt="">
-                        </div>
-                    </td>
-                    <td class="info ">
-                        <b>{{ item.title }}</b>
-                        <span
-                            v-html="item.description.length > 0 ? item.description : 'The Video description is shown here if the user has added it.'"></span>
-                    </td>
-                    <td>{{ item.views }}</td>
-                    <td>{{ item.size }}</td>
-                    <td>{{ item.last_modified }}</td>
-                    <td>
-                        <Option></Option>
-                    </td>
-                </tr>
+                    <tr v-for="(item, index) in recordings" :key="index">
+                        <td class="media">
+                            <div class="box">
+                                <label>{{ item.length }}</label>
+                                <img :src="item.src" alt="">
+                            </div>
+                        </td>
+                        <td class="info ">
+                            <b>{{ item.title }}</b>
+                            <span
+                                v-html="item.description.length > 0 ? item.description : 'The Video description is shown here if the user has added it.'"></span>
+                        </td>
+                        <td>{{ item.views }}</td>
+                        <td>{{ item.size }}</td>
+                        <td>{{ item.last_modified }}</td>
+                        <td>
+                            <Option></Option>
+                        </td>
+                    </tr>
 
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
 
     </section>
 
