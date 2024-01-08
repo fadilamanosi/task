@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "git": "git add . && git commit -m 'update' && git push origin master",
-    "netlify": "npm run git && npm run build && netlify deploy --prod"
+    "netlify": "npm run build && netlify deploy --prod"
   },
   "dependencies": {
     "netlify-cli": "^17.11.1",

@@ -24,7 +24,7 @@
         <div class="user">
             <span>Help</span>
             <div class="mini-info">
-                <img src="../assets/images/user.jpg">
+                <img src="/images/user.jpg">
                 <div>
                     <span>Cody Fisher</span>
                     <span>fadilamanosi@gmail.com</span>
