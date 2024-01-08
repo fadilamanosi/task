@@ -14,7 +14,7 @@ button {
     background-color: transparent;
     border: 1px solid gray;
     border-radius: 20px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     text-transform: capitalize;
     cursor: pointer;
     display: flex;
